@@ -5,6 +5,7 @@
 	<title>Restaurant</title>
 	<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="CSS/normalize.css">
+	<link rel="stylesheet"  href="CSS/font-awesome-4.6.3 2/css/font-awesome.min.css">">
 </head>
 <body>
 	<div id="whole_enchilada">
@@ -12,24 +13,61 @@
 			<div class="logo">
 			</div>
 			<div class="socialmedia">
+				<ul class="social">
+					<li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+					<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+					<li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
+				</ul>
 
 			</div>	
 		</div>
-		
-		<div class="mainimage">
-			<img src="images/beachside.jpeg" alt="beachside"/>
+		<div class="mainimage">	
 		</div>
-
 		<div id="feeds">
 			<div id="newsfeed"></div>
-			<div class="todaysSpecial"></div>
-			<di  class="location">
-				<iframe class="map" width="290" height="290" frameborder="0" style="border:0"
+			<div class="todaysSpecial">
+				<div class="scallops">
+				</div>
+			</div>
+			<div class="location">
+				<iframe class="map" width="310" height="290" frameborder="0" style="border:0"
 				src="https://www.google.com/maps/embed/v1/				view?zoom=20&center=36.1584,-115.1525&key=AIzaSyAtK9RASfKmdmMg0qH6AtRLXqnVXyueVrQ" allowfullscreen></iframe>
-			</di>
+			</div>
 		</div>
-		<div id="tabs"></div>
-		<div id="foodporn"></div>
+		<div id="tabs">
+			<div id="tab-container" class="tab-container">
+					<ul class='etabs'>
+					  <li class='tab'><a href="#tabs1-ourstory">Our Story</a></li>
+					  <li class='tab'><a href="#tabs1-menu">Menu</a></li>
+					  <li class='tab'><a href="#tabs1-reservations">Reservations</a></li>
+					</ul>
+					<div id="tabs1-ourstory">
+					  <h2>Our Story</h2>
+					 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rem inventore quis illo nulla saepe, velit illum tempora repellendus, repudiandae, error quibusdam consequuntur voluptas? Dolores?
+					</div>
+					<div id="tabs1-menu">
+					  <h2>Menu</h2>
+					  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nesciunt odit a quidem, optio dignissimos tempore reiciendis asperiores aliquam, totam officia. Est nostrum earum corrupti?
+
+					  <!-- content -->
+					</div>
+					<div id="tabs1-reservations">
+					  <h2>Reservations</h2>
+					  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ullam consequatur vero laborum rerum nemo ratione repellendus nobis molestiae, possimus sunt. Delectus, voluptates, optio. Quae.<!-- content -->
+					</div>
+			</div>
+		</div>
+		<div id="foodporn">
+			<h2 class="w3-center">Food Porn</h2>
+			<div id="w3-content" style="max-width:200px;max-height:200px;position:relative">
+  				<img class="mySlides" src="images/foodporn1.jpg" style="width:100%" >
+  				<img class="mySlides" src="images/foodporn2.jpg" style="width:100%">
+  				<img class="mySlides" src="images/foodporn3.jpg" style="width:100%">
+  				<img class="mySlides" src="images/foodporn4.jpg" style="width:100%">	
+  				<a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+  				<a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+			</div>
+		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="JS/main.js"></script>

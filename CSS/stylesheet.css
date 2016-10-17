@@ -24,7 +24,7 @@ background-size: cover;*/
 	background-size: cover;
 	width: 200px;
 	height: 100px;
-	margin-left: 460px;
+	margin: auto;
 }
 
 .socialmedia {
@@ -32,40 +32,60 @@ background-size: cover;*/
 	width: 150px;
 	margin-left: 1040px;
 	background-color: rgb(246,130,219);
-	margin-top: -38px;
+	margin-top: -42px;
+
+}
+.social {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	font-size: 30px;
+	padding-left: 0px;
 }
 
 
 .mainimage {
 	height:200px;
-	width:100%;
+	width:75%;
 	border:1px solid black;
-	margin-bottom: 20px
+	margin-bottom: 20px;
+	background-image: url(../images/coopers_hawk.jpeg);
+	margin:auto;
+	background-repeat: no-repeat;
+	background-size: 100% 200px;
+
 	
-	
+
 }
 
 #feeds {
 	height: 300px;
-	width: 100%;
+	width: 90%;
 	border:1px solid black;
 	margin-bottom: 20px;
 	display: flex;
 	flex-direction: row;
-
+	margin:auto;	
 }
 
-.newsfeed, .todaysSpecial {
+.todaysSpecial {
+	margin: auto;
+	padding: 0px 10px 0px;
+}
+
+
+.newsfeed, .todaysSpecial, .location {
+
+	border: 1px solid #bbb;
+	height:300px;
 	width: 380px;
-	margin-right: 30px;
-	
 }
 
 .newsfeed {
 	display: block;
     display: -webkit-box;
     max-width: 380px;
-    height: 109.2px;
+    height: 300px;
     margin: 0 auto;
     font-size: 12px;
     line-height: 1.4;
@@ -75,10 +95,45 @@ background-size: cover;*/
     text-overflow: ellipsis;
 }
 
-.todaysSpecial > h2, p {
-	font-size: 14px;
+
+.todaysSpecial {
+	background-image: url(../images/scallops.jpeg);
+	background-size: 125px 125px;
+	background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.todaysSpecial >  p {
+	font-size: 1px;
 	width: 380px;
-  	word-wrap: break-word;
+  	word-wrap: break-word;  	
+}
+
+
+.todaysSpecial > h2 {
+	font-size: 14px;
+	text-align: center;
+	
+}
+
+.description {
+	font-size: 12px;
+	margin-top: 185px;
+}
+.indicators {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10px;	
+}
+.indicators > li {
+	font-size: 10px;
+	margin: auto;
+}
+
+.scallops {
+	margin-top: 30px;
 }
 
 
@@ -88,11 +143,87 @@ background-size: cover;*/
 	border:1px solid blue;
 }
 
+.etabs {
+	list-style: none;
+	display:flex;
+	text-decoration: none;
+}
+
+.tab {
+	margin-right: 20px;
+}
+
+.etabs { 
+	margin: 0; padding: 0; 
+}
+
+.tab { 
+	display: inline-block; zoom:1; 
+	*display:inline;
+ 	background: #eee; 
+	border: solid 1px #999;
+ 	border-bottom: none; 
+	-moz-border-radius: 4px 4px 0 0;
+ 	-webkit-border-radius: 4px 4px 0 0; 
+ }
+
+.tab a { 
+	font-size: 14px;
+ 	line-height: 2em; 
+	display: block; 
+	padding: 0 10px;
+	outline: none; 
+	text-decoration: none;
+}
+
+.tab  li:hover { 
+	text-decoration:underline; 
+}
+
+.tab.active {
+	background: #fff; 
+	padding-top: 6px; 
+	position:
+ 	relative; 
+	top: 1px; 
+	border-color: #666; 
+}
+
+.tab a.active { 
+	font-weight: bold; 
+}
+
+.tab-container  { 
+	background: #fff;
+ 	border:solid #666 1px;
+ 	padding: 10px;
+ 	-moz-border-radius:
+ 	0 4px 4px 4px; 
+	-webkit-border-radius: 	
+	0 4px 4px 4px; 
+}
+
+#tabs1-ourstory, #tabs1-menu, #tabs1-reservations {
+	border:1px solid #bbb;
+} 
+
 #foodporn {
+	
 	width: 40%;
 	border:1px solid red;
-	margin-left: 610px;
-	margin-top: -500px;	
+	margin-top: 0px;	
 	height:100px;
-	background-color: rgb(254,240,214);
+	margin:auto;
 }
+
+#foodporn > h2 {
+	text-align: center;
+
+}
+
+.mySlides {
+		margin-left: 150px;
+}
+
+
+

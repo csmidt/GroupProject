@@ -32,26 +32,48 @@ $(document).ready(function(){
 
 		var deal = `
 				<h2>${todaysItem.item}<h2>
-				<p>${todaysItem.price}</p>
-				<p>${todaysItem.description}</p>
-				<p>${todaysItem.allergies}</p>
-				<p>${todaysItem.favorite}</p>
-				<p>${todaysItem.spicy}</p>
-				<p>${todaysItem.vegan}</p>
-			
+				<p class="description">${todaysItem.description}</p>
+				<p>Price.......${todaysItem.price}</p>
+				<ul class="indicators">
+				<li>Allergies ${todaysItem.allergies}</li>
+				<li>Favorite ${todaysItem.favorite}</li>
+				<li>Spicy ${todaysItem.spicy}</li>
+				<li>Vegan ${todaysItem.vegan}</li>
+				</ul>
 		`
 		$(".todaysSpecial").html(deal)
 
 	}
 
+	 $(function(){
+      $("#w3-content").slidesjs({
+        width: 200,
+        height: 200
+      });
+    });
 
 
+/*
 
+	$.get("https://json-data.herokuapp.com/restaurant/menu/1", function(data){
+		console.log(data)
+	})
+	
+	function displayMenu(choices) {
 
-	 function dailySpecial(menu, id){
-	 	console.log(menu)
-	 	console.log(id)
-	 }
+		var pickme =`
+			<p>${choices.item}</p>
+			<p>${choices.price}</p>
+			<p>${choices.description}</p>
+			<p>${choices.allergies}</p>
+			<p>${choices.favorite}</p>
+			<p>${choices.spicy}</p>
+			<p>${choices.vegan}</p>
+			`
+		$("#tabs1-menu").html(pickme)
+	}
+*/
+	
 
 
 });
