@@ -45,35 +45,69 @@ $(document).ready(function(){
 
 	}
 
-	 $(function(){
-      $("#w3-content").slidesjs({
-        width: 200,
-        height: 200
-      });
-    });
 
-
-/*
 
 	$.get("https://json-data.herokuapp.com/restaurant/menu/1", function(data){
-		console.log(data)
+		console.log('menu', data)
+		displayMenu(data)
 	})
 	
 	function displayMenu(choices) {
+		var pickmeHTML = '';
 
-		var pickme =`
-			<p>${choices.item}</p>
-			<p>${choices.price}</p>
-			<p>${choices.description}</p>
-			<p>${choices.allergies}</p>
-			<p>${choices.favorite}</p>
-			<p>${choices.spicy}</p>
-			<p>${choices.vegan}</p>
+		choices.appetizers.forEach(function(appetizer){
+			// create appetizers html here
+			pickmeHTML += 
 			`
-		$("#tabs1-menu").html(pickme)
-	}
-*/
-	
+			<h2 class ="foodTitle">${appetizer.item}</h2>
+			<p>${appetizer.price}</p>
+			<p class="thefood">${appetizer.description}</p>
+			<ul class="symbols">
+			<li class="about">${appetizer.allergies}</li>
+			<li class="about">${appetizer.favorite}</li>
+			<li class="about">${appetizer.spicy}</li>
+			<li class="about">${appetizer.vegan}</li>
+			</ul>
+			`
+		})
 
+		choices.entrees.forEach(function(entrees){
+
+			pickmeHTML += 
+			`
+
+			<h2 class ="foodTitle">${entrees.item}</h2>
+			<p>${entrees.price}</p>
+			<p class="thefood">${entrees.description}</p>
+			<ul class="symbols">
+			<li class="about">${entrees.allergies}</li>
+			<li class="about">${entrees.favorite}</li>
+			<li class="about">${entrees.spicy}</li>
+			<li class="about">${entrees.vegan}</li>
+			</ul>
+			`
+		})
+
+		choices.sides.forEach(function(sides){
+
+			pickmeHTML += 
+			`
+			<h2 class ="foodTitle">${sides.item}</h2>
+			<p>${sides.price}</p>
+			<p class="thefood">${sides.description}</p>
+			<ul class="symbols">
+			<li class="about">${sides.allergies}</li>
+			<li class="about">${sides.favorite}</li>
+			<li class="about">${sides.vegan}</li>
+			</ul.>
+			`
+		})
+
+		$("#tabs1-menu").html(pickmeHTML)
+	}
+
+	
+	$("#tab-container").easytabs()
+	$("#w3-content").cycle()
 
 });

@@ -5,7 +5,7 @@
 	<title>Restaurant</title>
 	<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="CSS/normalize.css">
-	<link rel="stylesheet"  href="CSS/font-awesome-4.6.3 2/css/font-awesome.min.css">">
+	<link rel="stylesheet"  href="CSS/font-awesome-4.6.3 2/css/font-awesome.min.css">
 </head>
 <body>
 	<div id="whole_enchilada">
@@ -24,17 +24,44 @@
 		<div class="mainimage">	
 		</div>
 		<div id="feeds">
-			<div id="newsfeed"></div>
-			<div class="todaysSpecial">
-				<div class="scallops">
+			<div class="feedContainer">
+				<h3 class="feedSection">Latest News!!</h3>
+				<div id="newsfeed">	
 				</div>
 			</div>
-			<div class="location">
-				<iframe class="map" width="310" height="290" frameborder="0" style="border:0"
-				src="https://www.google.com/maps/embed/v1/				view?zoom=20&center=36.1584,-115.1525&key=AIzaSyAtK9RASfKmdmMg0qH6AtRLXqnVXyueVrQ" allowfullscreen></iframe>
+			<div class="feedContainer">
+				<h3 class="feedSection"> Check Out Our Daily Special!</h3>
+				<div class="todaysSpecial">
+					<div id="scallops">
+					</div>
+				</div>
+			</div>
+			<div class="feedContainer">
+				<h3 class="feedSection">Visit Our Location!</h3>
+				<div class="location">
+					<iframe class="map" width="300" height="225" frameborder="0" style="border:0"
+					src="https://www.google.com/maps/embed/v1/				view?zoom=20&center=36.1584,-115.1525&key=AIzaSyAtK9RASfKmdmMg0qH6AtRLXqnVXyueVrQ" allowfullscreen></iframe>
+					<h5> 1112 S Casino Center Dr LV, NV 89104</h5>
+				</div>
 			</div>
 		</div>
-		<div id="tabs">
+		
+		<div id="foodporn">
+			<h2 class="w3-center">What's to Eat?</h2>
+			<div id="w3-content" style="max-width:200px;max-height:250px;position:relative">
+  				<img class="mySlides" src="images/foodporn1.jpg" style="width:100%" >
+  				<img class="mySlides" src="images/foodporn2.jpg" style="width:100%">
+  				<img class="mySlides" src="images/foodporn3.jpg" style="width:100%">
+  				<img class="mySlides" src="images/foodporn4.jpg" style="width:100%">	
+  				<img class="mySlides" src="images/foodporn5.jpg" style="width:100%" >
+  				<img class="mySlides" src="images/foodporn6.jpg" style="width:100%">
+  				<img class="mySlides" src="images/foodporn7.jpg" style="width:100%">
+  				<img class="mySlides" src="images/foodporn8.jpg" style="width:100%">
+  				<img class="mySlides" src="images/foodporn9.jpg" style="width:100%" >
+  				<img class="mySlides" src="images/foodporn10.jpg" style="width:100%">	
+  			</div>
+  		</div>
+  		<div id="tabs">
 			<div id="tab-container" class="tab-container">
 					<ul class='etabs'>
 					  <li class='tab'><a href="#tabs1-ourstory">Our Story</a></li>
@@ -47,29 +74,26 @@
 					</div>
 					<div id="tabs1-menu">
 					  <h2>Menu</h2>
-					  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nesciunt odit a quidem, optio dignissimos tempore reiciendis asperiores aliquam, totam officia. Est nostrum earum corrupti?
-
-					  <!-- content -->
 					</div>
 					<div id="tabs1-reservations">
 					  <h2>Reservations</h2>
-					  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ullam consequatur vero laborum rerum nemo ratione repellendus nobis molestiae, possimus sunt. Delectus, voluptates, optio. Quae.<!-- content -->
+					  	<div class="column">
+							<label for =“firstname”>First Name</label>
+							<input type=“text” id=“firstname” name =“firstname” placeholder="Mrs. " /><br /><br />
+							<label for=“lastname”> Last Name</label>
+							<input type=“text” id=“lastname” name= “lastname” placeholder="Guests" /><br /><br />
+							<label for =“email”>Email Address</label>
+							<input type =“email” id =“email” name=“email” placeholder="guest@gmail.com" /><br /><br />
+							<label for ="numberofguests">Number of Guests</label>
+							<input type="text" id="guests" name="guests"/><br /><br />
+						</div>
 					</div>
-			</div>
-		</div>
-		<div id="foodporn">
-			<h2 class="w3-center">Food Porn</h2>
-			<div id="w3-content" style="max-width:200px;max-height:200px;position:relative">
-  				<img class="mySlides" src="images/foodporn1.jpg" style="width:100%" >
-  				<img class="mySlides" src="images/foodporn2.jpg" style="width:100%">
-  				<img class="mySlides" src="images/foodporn3.jpg" style="width:100%">
-  				<img class="mySlides" src="images/foodporn4.jpg" style="width:100%">	
-  				<a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
-  				<a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
 			</div>
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="JS/jquery.easytabs.min.js"></script>
+	<script type="text/javascript" src="JS/jquery.cycle2.min.js"></script>
 	<script type="text/javascript" src="JS/main.js"></script>
 </body>
 </html>
