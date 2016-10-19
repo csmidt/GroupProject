@@ -9,6 +9,7 @@
 </head>
 <body>
 	<div id="whole_enchilada">
+
 		<div id="header">
 			<div class="logo">
 			</div>
@@ -16,25 +17,41 @@
 				<ul class="social">
 					<li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
 					<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+					<li><img class="ot" src="images/OpenTableLogo.png"></img></li>
 					<li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
 				</ul>
-
 			</div>	
 		</div>
+
 		<div class="mainimage">	
 		</div>
+
 		<div id="feeds">
 			<div class="feedContainer">
-				<h3 class="feedSection">Latest News!!</h3>
-				<div id="newsfeed">	
-				</div>
-			</div>
-			<div class="feedContainer">
-				<h3 class="feedSection"> Check Out Our Daily Special!</h3>
+				<h3 class="feedSection">Check Out Our Daily Special!</h3>
 				<div class="todaysSpecial">
 					<div id="scallops">
 					</div>
 				</div>
+			</div>		
+			<div class="feedContainer">
+				 <h3 class="feedSection">What's to Eat?</h2>
+					<div id="w3-content" style="max-width:330px;max-height:300px;position:relative">
+		  				<img class="mySlides" src="images/foodporn1.jpg" style="width:100%" >
+		  				<img class="mySlides" src="images/foodporn3.jpg" style="width:100%">
+		  				<img class="mySlides" src="images/foodporn4.jpg" style="width:100%">	
+		  				<img class="mySlides" src="images/foodporn5.jpg" style="width:100%" >
+		  				<img class="mySlides" src="images/foodporn6.jpg" style="width:100%">
+		  				<img class="mySlides" src="images/foodporn7.jpg" style="width:100%">
+		  				<img class="mySlides" src="images/foodporn8.jpg" style="width:100%">
+		  				<img class="mySlides" src="images/foodporn9.jpg" style="width:100%" >
+		  				<img class="mySlides" src="images/foodporn10.jpg" style="width:100%">	
+		  			</div>
+			</div>
+			<div class="feedContainer">
+				<h3 class="feedSection">Latest News!!</h3>
+				<div id="newsfeed">	
+				</div>	
 			</div>
 			<div class="feedContainer">
 				<h3 class="feedSection">Visit Our Location!</h3>
@@ -43,24 +60,9 @@
 					src="https://www.google.com/maps/embed/v1/				view?zoom=20&center=36.1584,-115.1525&key=AIzaSyAtK9RASfKmdmMg0qH6AtRLXqnVXyueVrQ" allowfullscreen></iframe>
 					<h5> 1112 S Casino Center Dr LV, NV 89104</h5>
 				</div>
-			</div>
+			</div>			
 		</div>
-		
-		<div id="foodporn">
-			<h2 class="w3-center">What's to Eat?</h2>
-			<div id="w3-content" style="max-width:200px;max-height:250px;position:relative">
-  				<img class="mySlides" src="images/foodporn1.jpg" style="width:100%" >
-  				<img class="mySlides" src="images/foodporn2.jpg" style="width:100%">
-  				<img class="mySlides" src="images/foodporn3.jpg" style="width:100%">
-  				<img class="mySlides" src="images/foodporn4.jpg" style="width:100%">	
-  				<img class="mySlides" src="images/foodporn5.jpg" style="width:100%" >
-  				<img class="mySlides" src="images/foodporn6.jpg" style="width:100%">
-  				<img class="mySlides" src="images/foodporn7.jpg" style="width:100%">
-  				<img class="mySlides" src="images/foodporn8.jpg" style="width:100%">
-  				<img class="mySlides" src="images/foodporn9.jpg" style="width:100%" >
-  				<img class="mySlides" src="images/foodporn10.jpg" style="width:100%">	
-  			</div>
-  		</div>
+
   		<div id="tabs">
 			<div id="tab-container" class="tab-container">
 					<ul class='etabs'>
@@ -69,23 +71,32 @@
 					  <li class='tab'><a href="#tabs1-reservations">Reservations</a></li>
 					</ul>
 					<div id="tabs1-ourstory">
-					  <h2>Our Story</h2>
+					  <h2 class="tabtitle"> Our Story</h2>
 					 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rem inventore quis illo nulla saepe, velit illum tempora repellendus, repudiandae, error quibusdam consequuntur voluptas? Dolores?
 					</div>
 					<div id="tabs1-menu">
-					  <h2>Menu</h2>
+					  <h2 class="tabtitle"> Menu</h2>
 					</div>
 					<div id="tabs1-reservations">
-					  <h2>Reservations</h2>
-					  	<div class="column">
-							<label for =“firstname”>First Name</label>
-							<input type=“text” id=“firstname” name =“firstname” placeholder="Mrs. " /><br /><br />
-							<label for=“lastname”> Last Name</label>
-							<input type=“text” id=“lastname” name= “lastname” placeholder="Guests" /><br /><br />
-							<label for =“email”>Email Address</label>
-							<input type =“email” id =“email” name=“email” placeholder="guest@gmail.com" /><br /><br />
-							<label for ="numberofguests">Number of Guests</label>
-							<input type="text" id="guests" name="guests"/><br /><br />
+					  <h2 class="tabtitle"> Reservations</h2>
+					  	<div class="reserve">
+							<label for =“fullname”>Full Name</label>
+							<input type=“text” id=“fullname” name =“firstname” placeholder="Jane Smith " /><br /><br />
+							<label for=“numberOfGuests”>Number of Guests</label>
+							<input type=“text” id=“numberOfGuests” name= “lastname” placeholder="Number of Guests" /><br /><br />
+
+							<label for =“datepicker”>Date</label>
+							<input type =“text” id =“datepicker” name=“date” placeholder="Select Date" /><br /><br />
+
+							<label for ="specialRequests">Special Requests</label>
+							<input type="textarea" rows="10" cols= "10" id="specialRequests" name="specialRequests" /><br /><br />
+
+							<label for =“seating”>Seating Preference</label>
+								<select>id=“seating” name=“seating”/>
+									 <option value="">Choose your seating preference</option>
+									 <option value="indoor">Indoor</option>
+									 <option value="outdoor">Outdoor</option>	 
+								</select> <br /><br />
 						</div>
 					</div>
 			</div>

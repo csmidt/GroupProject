@@ -23,13 +23,13 @@ background-size: cover;*/
 	background-size: cover;
 	width: 140px;
 	height: 130px;
-	margin: auto;
+	margin-left: 160px;
 }
 
 .socialmedia {
 	height: 35px;
 	width: 150px;
-	margin-left: 1040px;
+	margin-left: 973px;
 	background-color: transparent;
 	margin-top: -65px;
 
@@ -41,7 +41,10 @@ background-size: cover;*/
 	font-size: 30px;
 	padding-left: 0px;
 }
-
+.ot {
+	height:25px;
+	width:25px;
+}
 
 .mainimage {
 	height:200px;
@@ -53,8 +56,113 @@ background-size: cover;*/
 	background-size: 100% 200px	
 }
 
+#feeds {
+	flex-wrap: wrap;
+	width: 70%;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	margin:auto;
+	background-color:  #6699cc	
+	margin-top:10px;
+}
+
+.feedContainer {
+	height:350px;
+	width: 50%;
+	margin:auto;
+}
+
+.newsfeed, .todaysSpecial, .location, #w3-content {
+	border: 1px solid #bbb;
+	height:250px;
+	width: 70%;
+	margin-top: 20px;
+}
+
+.todaysSpecial {
+	margin: auto;
+	padding: 0px 10px 0px;
+}
+
+#scallops {
+	background-image: url(../images/scallops1.jpeg);
+	background-size: 125px 125px;
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.specialPrice {
+	list-style: none;
+	display: flex;
+	flex-direction: wrap;
+}
+.specialPrice > li {
+	font-size: 12px;	
+}
+
+.description {
+	margin-top: 135px;
+	margin-left: 15px;
+}
+
+.indicators {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+.indicators > li {
+	font-size: 10px;
+	margin-left:-50px;
+}
+
+#w3-content {
+	margin-left: 65px;
+	margin-top: 10px
+}
+
+.location {
+	margin-left: 65px;
+}
+
+.location > h5 {
+	text-align: center;
+}
+
+.map {
+	margin-left:5px;
+	margin-top: 10px;
+}
+.newsfeed {
+	display: block;
+    display: -webkit-box;
+    max-width: 380px;
+    height: 250px;
+    font-size: 12px;
+    line-height: 1.4;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left:65px;
+}
+
+.newsfeed > p, h2 {
+	margin: 15px 20px 0px;
+}
+
+.feedSection {
+	margin-left: 140px;
+}
+
+
+
+
+
 #tabs {
-	width:100%;
+	width:70%;
 	background-color: #6699cc;
 }
 
@@ -62,23 +170,24 @@ background-size: cover;*/
 	list-style: none;
 	display:flex;
 	text-decoration: none;
+	
+}
+
+.etabs { 
+	margin: 0; 
+	padding: 0; 
+	margin-left: 300px;
 }
 
 .tab {
 	margin-right: 20px;
 }
 
-.etabs { 
-	margin: 0; 
-	padding: 0; 
-}
-
 .tab { 
 	display: inline-block; zoom:1; 
 	*display:inline;
  	background:  #6699cc; 
-	border: solid 1px  #666 ;
- 	border-bottom: none; 
+	border: solid 1px  #666 ; 
 	-moz-border-radius: 4px 4px 0 0;
  	-webkit-border-radius: 4px 4px 0 0; 
  }
@@ -90,14 +199,16 @@ background-size: cover;*/
 	padding: 0 10px;
 	outline: none; 
 	text-decoration: none;
+	color: black;
 }
 
-.tab  li:hover { 
-	text-decoration:underline; 
+.tab:hover { 
+	text-decoration:underline;
+
 }
 
 .tab.active {
-	background: #fff; 
+	background: #6699cc; 
 	padding-top: 6px; 
 	position:
  	relative; 
@@ -116,11 +227,13 @@ background-size: cover;*/
  	0 4px 4px 4px; 
 	-webkit-border-radius: 	
 	0 4px 4px 4px; 
+	margin-left: 200px;
 }
 
-#tabs1-ourstory, #tabs1-menu, #tabs1-reservations {
-	border:1px solid #bbb;
-} 
+.tabtitle {
+	margin: 50px 0px 30px 350px;
+}
+
 
 .foodTitle {
 	font-size: 14px;
@@ -136,21 +249,6 @@ background-size: cover;*/
 	word-wrap: break-word;
 }
 
-.description {
-	font-size: 12px;
-	margin-top: 165px;
-}
-.indicators {
-	list-style: none;
-	display: flex;
-	justify-content: space-around;
-	margin-top: 10px;	
-}
-.indicators > li {
-	font-size: 10px;
-	margin: auto;
-}
-
 .symbols {
 	list-style: none;
 	display: flex;
@@ -159,106 +257,20 @@ background-size: cover;*/
 
 .reserve {
 	text-align: center;
-}
-#feeds {
-	height: 400px;
-	width: 90%;
-	margin-bottom: 20px;
-	display: flex;
-	flex-direction: row;
-	margin:auto;
-	background-color:  #6699cc	
-	margin-top:10px;
+	margin-left: 250px;	
+	width: 400px;
+	height: 400px;	
+	border:1px solid #fff;
 }
 
-.feedContainer {
-	height:400px;
-	width: 33%;
-}
-
-.todaysSpecial {
-	margin: auto;
-	padding: 0px 10px 0px;
-}
-
-.newsfeed, .todaysSpecial, .location {
-
-	border: 1px solid #bbb;
-	height:300px;
-	width: 330px;
-	margin-top: 20px;	
-}
-
-.location {
-	margin-left: 20px;
-
-}
-
-.newsfeed {
+label {
 	display: block;
-    display: -webkit-box;
-    max-width: 380px;
-    height: 300px;
-    margin: 10 auto;
-    font-size: 12px;
-    line-height: 1.4;
-    -webkit-line-clamp: 10;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+}
+.reserve >label  {
+	text-align: left;
 }
 
-.newsfeed > p, h2 {
-	margin: 15px 20px 0px;
+.reserve >input {
+	margin-left: -225px;
+	margin-top: 5px;
 }
-
-#scallops {
-	background-image: url(../images/scallops1.jpeg);
-	background-size: 125px 125px;
-	background-repeat: no-repeat;
-    background-position: center;
-
-}
-
-.todaysSpecial >  p {
-	font-size: 1px;
-	width: 380px;
-  	word-wrap: break-word;  	
-}
-
-
-.todaysSpecial > h2 {
-	font-size: 14px;
-	text-align: center;	
-}
-
-.map {
-	margin-left:18px;
-	margin-top: 20px;
-}
-.location > h5 {
-	text-align: center;
-}
-
-.feedSection{
-	text-align: center;
-
-}
-
-#foodporn {
-	width: 100%;
-	margin:auto;
-	
-}
-
-#foodporn > h2 {
-	text-align: center;
-
-}
-
-#w3-content {
-	margin:auto;
-	overflow: hidden;
-}
-
-

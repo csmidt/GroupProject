@@ -31,9 +31,11 @@ $(document).ready(function(){
 		})[0]
 
 		var deal = `
-				<h2>${todaysItem.item}<h2>
+				<ul class="specialPrice">
+					<li>${todaysItem.item}</li>
+					<li>Price.......${todaysItem.price}</li>
+				</ul>
 				<p class="description">${todaysItem.description}</p>
-				<p>Price.......${todaysItem.price}</p>
 				<ul class="indicators">
 				<li>Allergies ${todaysItem.allergies}</li>
 				<li>Favorite ${todaysItem.favorite}</li>
@@ -55,12 +57,13 @@ $(document).ready(function(){
 	function displayMenu(choices) {
 		var pickmeHTML = '';
 
+		pickmeHTML += '<h2 class="sections">Appetizers</h2>';
 		choices.appetizers.forEach(function(appetizer){
 			// create appetizers html here
 			pickmeHTML += 
 			`
 			<h2 class ="foodTitle">${appetizer.item}</h2>
-			<p>${appetizer.price}</p>
+			<p  class=$price>${appetizer.price}</p>
 			<p class="thefood">${appetizer.description}</p>
 			<ul class="symbols">
 			<li class="about">${appetizer.allergies}</li>
@@ -71,13 +74,14 @@ $(document).ready(function(){
 			`
 		})
 
+		pickmeHTML += '<h2 class="sections">Entrees</h2>'
 		choices.entrees.forEach(function(entrees){
 
 			pickmeHTML += 
 			`
 
 			<h2 class ="foodTitle">${entrees.item}</h2>
-			<p>${entrees.price}</p>
+			<p class=$price>${entrees.price}</p>
 			<p class="thefood">${entrees.description}</p>
 			<ul class="symbols">
 			<li class="about">${entrees.allergies}</li>
@@ -88,12 +92,13 @@ $(document).ready(function(){
 			`
 		})
 
+		pickmeHTML += '<hs class="sections>Sides</h2>'
 		choices.sides.forEach(function(sides){
 
 			pickmeHTML += 
 			`
 			<h2 class ="foodTitle">${sides.item}</h2>
-			<p>${sides.price}</p>
+			<p class=$price>${sides.price}</p>
 			<p class="thefood">${sides.description}</p>
 			<ul class="symbols">
 			<li class="about">${sides.allergies}</li>
@@ -109,5 +114,9 @@ $(document).ready(function(){
 	
 	$("#tab-container").easytabs()
 	$("#w3-content").cycle()
+
+	$(function (){
+		$("#datepicker").datepicker();
+	});
 
 });
