@@ -28,10 +28,9 @@
 
 		<div id="feeds">
 			<div class="feedContainer">
-				<h3 class="feedSection">Check Out Our Daily Special!</h3>
+				<h3 class="feedSectionSpecial">Check Out Our Daily Special!</h3>
 				<div class="todaysSpecial">
-					<div id="scallops">
-					</div>
+					<img id="scallops" src="images/scallops1.jpeg" style="width:60%" style="height:60%">
 				</div>
 			</div>		
 			<div class="feedContainer">
@@ -56,7 +55,7 @@
 			<div class="feedContainer">
 				<h3 class="feedSection">Visit Our Location!</h3>
 				<div class="location">
-					<iframe class="map" width="300" height="225" frameborder="0" style="border:0"
+					<iframe class="map" width="275" height="225" frameborder="0" style="border:0"
 					src="https://www.google.com/maps/embed/v1/				view?zoom=20&center=36.1584,-115.1525&key=AIzaSyAtK9RASfKmdmMg0qH6AtRLXqnVXyueVrQ" allowfullscreen></iframe>
 					<h5> 1112 S Casino Center Dr LV, NV 89104</h5>
 				</div>
@@ -71,8 +70,10 @@
 					  <li class='tab'><a href="#tabs1-reservations">Reservations</a></li>
 					</ul>
 					<div id="tabs1-ourstory">
-					  <h2 class="tabtitle"> Our Story</h2>
-					 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rem inventore quis illo nulla saepe, velit illum tempora repellendus, repudiandae, error quibusdam consequuntur voluptas? Dolores?
+					  <h2 class="tabtitlestory"> Our Story</h2>
+					  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae eum totam quo, inventore minus voluptatum sed officiis blanditiis consequuntur doloribus necessitatibus maxime sapiente cumque ab laborum deleniti accusamus, eveniet incidunt! Minus similique doloremque cupiditate quis rerum illo odio repellendus tempore esse amet vitae sapiente atque sint ipsum reprehenderit, maxime deleniti.</p>
+						<img src="images/family_copy.jpg" alt="Family" style="width:70%" style="height:20%">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quidem asperiores eum rerum, quibusdam laborum fugiat nam cum doloribus id natus possimus quam quaerat eveniet laboriosam ducimus voluptas enim consequatur repudiandae ipsam. Optio, consectetur velit aliquam, quia laudantium facere ipsa consequuntur commodi rem voluptatibus eligendi nostrum hic quis nobis nihil.</p>
 					</div>
 					<div id="tabs1-menu">
 					  <h2 class="tabtitle"> Menu</h2>
@@ -86,17 +87,18 @@
 							<input type=“text” id=“numberOfGuests” name= “lastname” placeholder="Number of Guests" /><br /><br />
 
 							<label for =“datepicker”>Date</label>
-							<input type =“text” id =“datepicker” name=“date” placeholder="Select Date" /><br /><br />
+							<input type="date" name="datepicker" id=“datepicker” name=“date”/><br /><br />
 
 							<label for ="specialRequests">Special Requests</label>
-							<input type="textarea" rows="10" cols= "10" id="specialRequests" name="specialRequests" /><br /><br />
+							<textarea rows="6" cols="30" id="specialRequests” placeholder ="This is how I rock..."></textarea>  <br /><br />
 
 							<label for =“seating”>Seating Preference</label>
 								<select>id=“seating” name=“seating”/>
 									 <option value="">Choose your seating preference</option>
 									 <option value="indoor">Indoor</option>
-									 <option value="outdoor">Outdoor</option>	 
-								</select> <br /><br />
+									 <option value="outdoor">Outdoor</option>
+							    </select> <br /><br />
+							 <button id="button">Reserve</button>
 						</div>
 					</div>
 			</div>

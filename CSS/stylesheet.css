@@ -16,6 +16,7 @@ background-size: cover;*/
 	width:100%;
 	height: 130px;
 	background-color: #6699cc;
+	position: relative;
 }
 
 .logo {
@@ -53,7 +54,7 @@ background-size: cover;*/
 	background-image: url(../images/coopers_hawk4.jpg);
 	margin:auto;
 	background-repeat: no-repeat;
-	background-size: 100% 200px	
+	background-size: 100% 200px;	
 }
 
 #feeds {
@@ -73,6 +74,7 @@ background-size: cover;*/
 	margin:auto;
 }
 
+
 .newsfeed, .todaysSpecial, .location, #w3-content {
 	border: 1px solid #bbb;
 	height:250px;
@@ -80,18 +82,15 @@ background-size: cover;*/
 	margin-top: 20px;
 }
 
+#w3-content img {
+	max-width:100%;
+	max-height:250px;
+}
+
 .todaysSpecial {
 	margin: auto;
 	padding: 0px 10px 0px;
 }
-
-#scallops {
-	background-image: url(../images/scallops1.jpeg);
-	background-size: 125px 125px;
-	background-repeat: no-repeat;
-    background-position: center;
-}
-
 
 .specialPrice {
 	list-style: none;
@@ -132,7 +131,7 @@ background-size: cover;*/
 }
 
 .map {
-	margin-left:5px;
+	margin-left:20px;
 	margin-top: 10px;
 }
 .newsfeed {
@@ -157,9 +156,9 @@ background-size: cover;*/
 	margin-left: 140px;
 }
 
-
-
-
+.feedSectionSpecial {
+	margin-left: 100px;
+}
 
 #tabs {
 	width:70%;
@@ -176,7 +175,7 @@ background-size: cover;*/
 .etabs { 
 	margin: 0; 
 	padding: 0; 
-	margin-left: 300px;
+	margin-left: 250px;
 }
 
 .tab {
@@ -187,9 +186,10 @@ background-size: cover;*/
 	display: inline-block; zoom:1; 
 	*display:inline;
  	background:  #6699cc; 
-	border: solid 1px  #666 ; 
+	border: solid 1px  #bbb ; 
 	-moz-border-radius: 4px 4px 0 0;
  	-webkit-border-radius: 4px 4px 0 0; 
+
  }
 
 .tab a { 
@@ -227,17 +227,62 @@ background-size: cover;*/
  	0 4px 4px 4px; 
 	-webkit-border-radius: 	
 	0 4px 4px 4px; 
-	margin-left: 200px;
+	margin-left: 234px;
+
 }
 
 .tabtitle {
-	margin: 50px 0px 30px 350px;
+	margin: 50px 0px 30px 300px;
 }
 
+.tabtitlestory {
+	margin: 50px 0px 30px 340px;
+}
+
+
+#tabs1-menu {
+	width: 800px;
+	background-color: #c6d8eb;
+}
+
+#tabs1-ourstory 	{
+	width: 800px;
+	background-color: #c6d8eb;
+	margin-top: -30px;
+}
+
+#tabs1-ourstory p {
+	margin-left: 20px;
+	font-size: 13px;
+	padding-bottom: 20px;
+}
+
+#tabs1-ourstory img {
+	margin-left: 120px;
+
+}
+
+.menuSelections {
+	text-align: center; 
+}
+.sections {
+	border-bottom: .5px solid #666;
+}
+.menuDisplay {
+	list-style: none;
+	display: flex;	
+}
+
+.menuDisplay > li {
+	font-size: 16px;
+
+}
 
 .foodTitle {
 	font-size: 14px;
 	font-family: serif;
+	margin-left: 0px;
+	font-weight: bold;
 }
 .about {
 	font-size: 12px;
@@ -247,20 +292,55 @@ background-size: cover;*/
 
 .thefood {
 	word-wrap: break-word;
+	font-size: 13px;
+	width:480px;
+	margin-left: 40px;
+
 }
 
-.symbols {
+.symbolsApps {
+	margin-top:-110px;
+	padding-top: 30px;
 	list-style: none;
 	display: flex;
 	font-size: 12px;
+	margin-left: 650px;
+	border-left: .5px solid #666;
+	height: 110px;
 }
 
+.symbolsEntrees {
+	margin-top: -70px;
+	padding-top: 15px;
+	list-style: none;
+	display: flex;
+	font-size: 12px;
+	margin-left: 650px;
+	border-left: .5px solid #666;
+	height: 70px;
+}
+
+.symbolsSides {
+	margin-top: -40px;
+	list-style: none;
+	display: flex;
+	font-size: 12px;
+	margin-left: 650px;
+	border-left: .5px solid #666;
+	height: 30px;
+}
+#tabs1-reservations {
+	width: 800px;
+	background-color: #c6d8eb;
+	margin-top: -30px;
+	height: 570px;
+}
 .reserve {
 	text-align: center;
-	margin-left: 250px;	
+	margin-left: 200px;	
 	width: 400px;
-	height: 400px;	
-	border:1px solid #fff;
+	height: 480px;	
+	background-color: #6699cc;
 }
 
 label {
@@ -268,9 +348,24 @@ label {
 }
 .reserve >label  {
 	text-align: left;
+	font-size: 13px;
 }
 
 .reserve >input {
 	margin-left: -225px;
 	margin-top: 5px;
+	font-size: 13px;
+}
+.reserve > textarea {
+	margin-left: -131px;
+	margin-top: 5px;	
+}
+
+.reserve > select {
+	margin-left: -165px;
+	margin-top:5px;
+}
+
+#button {
+	margin-top: 20px;
 }

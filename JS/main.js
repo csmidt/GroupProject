@@ -1,5 +1,19 @@
 $(document).ready(function(){
 
+	$(".tabs").on("click", function(){
+        $("#tabs1-ourstory").removeClass("show");
+        $(this).find("+ .body").addClass("show")
+    })
+
+	$(".tabs").on("click", function(){
+        $("#tabs1-menu").removeClass("show");
+        $(this).find("+ .body").addClass("show")
+    })
+
+    $(".tabs").on("click", function(){
+        $("#tabs1-reservations").removeClass("show");
+        $(this).find("+ .body").addClass("show")
+    })
 
 	$.get("https://json-data.herokuapp.com/restaurant/news/1", function(data){
 		console.log(data)
@@ -33,7 +47,7 @@ $(document).ready(function(){
 		var deal = `
 				<ul class="specialPrice">
 					<li>${todaysItem.item}</li>
-					<li>Price.......${todaysItem.price}</li>
+					<li>${todaysItem.price}</li>
 				</ul>
 				<p class="description">${todaysItem.description}</p>
 				<ul class="indicators">
@@ -47,8 +61,6 @@ $(document).ready(function(){
 
 	}
 
-
-
 	$.get("https://json-data.herokuapp.com/restaurant/menu/1", function(data){
 		console.log('menu', data)
 		displayMenu(data)
@@ -57,19 +69,22 @@ $(document).ready(function(){
 	function displayMenu(choices) {
 		var pickmeHTML = '';
 
+		pickmeHTML += '<h2 class="menuSelections"> Our Selections </h3>'
 		pickmeHTML += '<h2 class="sections">Appetizers</h2>';
 		choices.appetizers.forEach(function(appetizer){
 			// create appetizers html here
 			pickmeHTML += 
 			`
-			<h2 class ="foodTitle">${appetizer.item}</h2>
-			<p  class=$price>${appetizer.price}</p>
+			<ul class="menuDisplay">
+				<li class ="foodTitle">${appetizer.item}</li>
+				<li class="price">.....................${appetizer.price}</li>
+			</ul>
 			<p class="thefood">${appetizer.description}</p>
-			<ul class="symbols">
-			<li class="about">${appetizer.allergies}</li>
-			<li class="about">${appetizer.favorite}</li>
-			<li class="about">${appetizer.spicy}</li>
-			<li class="about">${appetizer.vegan}</li>
+			<ul class="symbolsApps">
+				<li class="about">${appetizer.allergies}</li>
+				<li class="about">${appetizer.favorite}</li>
+				<li class="about">${appetizer.spicy}</li>
+				<li class="about">${appetizer.vegan}</li>
 			</ul>
 			`
 		})
@@ -79,32 +94,35 @@ $(document).ready(function(){
 
 			pickmeHTML += 
 			`
-
-			<h2 class ="foodTitle">${entrees.item}</h2>
-			<p class=$price>${entrees.price}</p>
+			<ul class="menuDisplay">
+				<li class ="foodTitle">${entrees.item}</li>
+				<li class="price">.......................${entrees.price}</li>
+			</ul>
 			<p class="thefood">${entrees.description}</p>
-			<ul class="symbols">
-			<li class="about">${entrees.allergies}</li>
-			<li class="about">${entrees.favorite}</li>
-			<li class="about">${entrees.spicy}</li>
-			<li class="about">${entrees.vegan}</li>
+			<ul class="symbolsEntrees">
+				<li class="about">${entrees.allergies}</li>
+				<li class="about">${entrees.favorite}</li>
+				<li class="about">${entrees.spicy}</li>
+				<li class="about">${entrees.vegan}</li>
 			</ul>
 			`
 		})
 
-		pickmeHTML += '<hs class="sections>Sides</h2>'
+		pickmeHTML += '<h2 class="sections">Sides</h2>'
 		choices.sides.forEach(function(sides){
 
 			pickmeHTML += 
 			`
-			<h2 class ="foodTitle">${sides.item}</h2>
-			<p class=$price>${sides.price}</p>
+			<ul class="menuDisplay">
+				<li class ="foodTitle">${sides.item}</li>
+				<li class="price">.........................${sides.price}</li>
+			</ul>
 			<p class="thefood">${sides.description}</p>
-			<ul class="symbols">
-			<li class="about">${sides.allergies}</li>
-			<li class="about">${sides.favorite}</li>
-			<li class="about">${sides.vegan}</li>
-			</ul.>
+			<ul class="symbolsSides">
+				<li class="about">${sides.allergies}</li>
+				<li class="about">${sides.favorite}</li>
+				<li class="about">${sides.vegan}</li>
+			</ul>
 			`
 		})
 
@@ -115,8 +133,11 @@ $(document).ready(function(){
 	$("#tab-container").easytabs()
 	$("#w3-content").cycle()
 
-	$(function (){
-		$("#datepicker").datepicker();
-	});
+
+	$("#button").click(function(){
+        $("#button").css("background-color", "red");
+    })
+
+	
 
 });
