@@ -1,19 +1,5 @@
 $(document).ready(function(){
 
-	$(".tabs").on("click", function(){
-        $("#tabs1-ourstory").removeClass("show");
-        $(this).find("+ .body").addClass("show")
-    })
-
-	$(".tabs").on("click", function(){
-        $("#tabs1-menu").removeClass("show");
-        $(this).find("+ .body").addClass("show")
-    })
-
-    $(".tabs").on("click", function(){
-        $("#tabs1-reservations").removeClass("show");
-        $(this).find("+ .body").addClass("show")
-    })
 
 	$.get("https://json-data.herokuapp.com/restaurant/news/1", function(data){
 		console.log(data)
@@ -49,12 +35,13 @@ $(document).ready(function(){
 					<li>${todaysItem.item}</li>
 					<li>${todaysItem.price}</li>
 				</ul>
+				<img id="scallops" src="images/scallops1.jpeg" />
 				<p class="description">${todaysItem.description}</p>
 				<ul class="indicators">
-				<li>Allergies ${todaysItem.allergies}</li>
-				<li>Favorite ${todaysItem.favorite}</li>
-				<li>Spicy ${todaysItem.spicy}</li>
-				<li>Vegan ${todaysItem.vegan}</li>
+				<li> ${todaysItem.allergies ? '<i class="fa fa-exclamation-circle" aria-hidden="true"></i>' : ''}</li>
+				<li> ${todaysItem.favorite ? '<i class="fa fa-gratipay" aria-hidden="true"></i>' : '' }</li>
+				<li> ${todaysItem.spicy ? '<i class="fa fa-fire" aria-hidden="true"></i>' : ''}</li>
+				<li> ${todaysItem.vegan ? '<i class="fa fa-leaf" aria-hidden="true"></i>' : ''}</li>
 				</ul>
 		`
 		$(".todaysSpecial").html(deal)
@@ -81,10 +68,10 @@ $(document).ready(function(){
 			</ul>
 			<p class="thefood">${appetizer.description}</p>
 			<ul class="symbolsApps">
-				<li class="about">${appetizer.allergies}</li>
-				<li class="about">${appetizer.favorite}</li>
-				<li class="about">${appetizer.spicy}</li>
-				<li class="about">${appetizer.vegan}</li>
+				<li class="about">${appetizer.allergies ? '<i class="fa fa-exclamation-circle" aria-hidden="true"></i>' : ''}</li>
+				<li class="about">${appetizer.favorite ? '<i class="fa fa-gratipay" aria-hidden="true"></i>' : '' }</li>
+				<li class="about">${appetizer.spicy ? '<i class="fa fa-fire" aria-hidden="true"></i>' : ''}</li>
+				<li class="about">${appetizer.vegan  ? '<i class="fa fa-leaf" aria-hidden="true"></i>' : ''}</li>
 			</ul>
 			`
 		})
@@ -100,10 +87,10 @@ $(document).ready(function(){
 			</ul>
 			<p class="thefood">${entrees.description}</p>
 			<ul class="symbolsEntrees">
-				<li class="about">${entrees.allergies}</li>
-				<li class="about">${entrees.favorite}</li>
-				<li class="about">${entrees.spicy}</li>
-				<li class="about">${entrees.vegan}</li>
+				<li class="about">${entrees.allergies ? '<i class="fa fa-exclamation-circle" aria-hidden="true"></i>' : ''}</li>
+				<li class="about">${entrees.favorite ? '<i class="fa fa-gratipay" aria-hidden="true"></i>' : '' }</li>
+				<li class="about">${entrees.spicy ? '<i class="fa fa-fire" aria-hidden="true"></i>' : ''}</li>
+				<li class="about">${entrees.vegan ? '<i class="fa fa-leaf" aria-hidden="true"></i>' : ''}</li>
 			</ul>
 			`
 		})
@@ -119,9 +106,9 @@ $(document).ready(function(){
 			</ul>
 			<p class="thefood">${sides.description}</p>
 			<ul class="symbolsSides">
-				<li class="about">${sides.allergies}</li>
-				<li class="about">${sides.favorite}</li>
-				<li class="about">${sides.vegan}</li>
+				<li class="about">${sides.allergies ? '<i class="fa fa-exclamation-circle" aria-hidden="true"></i>' : ''}</li>
+				<li class="about">${sides.favorite ? '<i class="fa fa-gratipay" aria-hidden="true"></i>' : '' }</li>
+				<li class="about">${sides.vegan ? '<i class="fa fa-leaf" aria-hidden="true"></i>' : ''}</li>
 			</ul>
 			`
 		})

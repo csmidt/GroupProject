@@ -13,10 +13,13 @@ background-size: cover;*/
 }
 
 #header {
-	width:100%;
+	width:75%;
 	height: 130px;
 	background-color: #6699cc;
-	position: relative;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin:auto;
 }
 
 .logo {
@@ -24,15 +27,14 @@ background-size: cover;*/
 	background-size: cover;
 	width: 140px;
 	height: 130px;
-	margin-left: 160px;
+	
 }
 
 .socialmedia {
 	height: 35px;
 	width: 150px;
-	margin-left: 973px;
 	background-color: transparent;
-	margin-top: -65px;
+	margin-top: 65px;
 
 }
 .social {
@@ -79,7 +81,8 @@ background-size: cover;*/
 	border: 1px solid #bbb;
 	height:250px;
 	width: 70%;
-	margin-top: 20px;
+	margin-top: 20px;	
+	color:#4d4d4d;
 }
 
 #w3-content img {
@@ -92,18 +95,33 @@ background-size: cover;*/
 	padding: 0px 10px 0px;
 }
 
+#scallops {
+
+	width:70%;
+	height:110px;
+	margin-left: 40px;
+
+}
+
 .specialPrice {
 	list-style: none;
 	display: flex;
 	flex-direction: wrap;
+	justify-content: space-between;
+	margin-left: -50px;
+
 }
 .specialPrice > li {
-	font-size: 12px;	
+	font-size: 14px;
+	margin: auto;	
+	font-family: 'Andada', serif;
 }
 
 .description {
-	margin-top: 135px;
+	margin-top: 20px;
 	margin-left: 15px;
+	font-size: 12px;
+	font-family: 'Andada', serif;
 }
 
 .indicators {
@@ -113,7 +131,7 @@ background-size: cover;*/
 }
 
 .indicators > li {
-	font-size: 10px;
+	font-size: 14px;
 	margin-left:-50px;
 }
 
@@ -128,6 +146,7 @@ background-size: cover;*/
 
 .location > h5 {
 	text-align: center;
+	font-family: 'Andada', serif;
 }
 
 .map {
@@ -149,20 +168,27 @@ background-size: cover;*/
 }
 
 .newsfeed > p, h2 {
-	margin: 15px 20px 0px;
+	margin: 15px 20px 0px;	
+	font-family: 'Andada', serif;
 }
 
 .feedSection {
 	margin-left: 140px;
+	font-family: 'Andada', serif;
+	color:#333;
 }
 
 .feedSectionSpecial {
 	margin-left: 100px;
+	font-family: 'Andada', serif;
+	color:#333;
 }
 
 #tabs {
 	width:70%;
-	background-color: #6699cc;
+	background-color: #6699cc;	
+	font-family: 'Andada', serif;	
+	color:#4d4d4d;
 }
 
 .etabs {
@@ -176,6 +202,9 @@ background-size: cover;*/
 	margin: 0; 
 	padding: 0; 
 	margin-left: 250px;
+	font-family: 'Andada', serif;	
+	color:font-family: 'Andada', serif;	
+	color:#4d4d4d;;
 }
 
 .tab {
@@ -199,7 +228,8 @@ background-size: cover;*/
 	padding: 0 10px;
 	outline: none; 
 	text-decoration: none;
-	color: black;
+	font-family: 'Andada', serif;	
+	color:#4d4d4d;
 }
 
 .tab:hover { 
@@ -233,28 +263,35 @@ background-size: cover;*/
 
 .tabtitle {
 	margin: 50px 0px 30px 300px;
+	font-family: 'Andada', serif;	
+	color:#4d4d4d;
 }
 
 .tabtitlestory {
 	margin: 50px 0px 30px 340px;
+	font-family: 'Andada', serif;	
+	color:#4d4d4d;
 }
 
 
 #tabs1-menu {
 	width: 800px;
 	background-color: #c6d8eb;
+	font-family: 'Andada', serif;
 }
 
 #tabs1-ourstory 	{
 	width: 800px;
 	background-color: #c6d8eb;
 	margin-top: -30px;
+	font-family: 'Andada', serif;
 }
 
 #tabs1-ourstory p {
 	margin-left: 20px;
 	font-size: 13px;
-	padding-bottom: 20px;
+	padding-bottom: 20px;	
+	color:#4d4d4d;
 }
 
 #tabs1-ourstory img {
@@ -264,9 +301,12 @@ background-size: cover;*/
 
 .menuSelections {
 	text-align: center; 
+	color:#4d4d4d;
 }
 .sections {
 	border-bottom: .5px solid #666;
+	font-family: 'Andada', serif;
+	color:#4d4d4d;;
 }
 .menuDisplay {
 	list-style: none;
@@ -275,14 +315,16 @@ background-size: cover;*/
 
 .menuDisplay > li {
 	font-size: 16px;
+	font-family: 'Andada', serif;
 
 }
 
 .foodTitle {
 	font-size: 14px;
-	font-family: serif;
+	font-family: 'Andada', serif;
 	margin-left: 0px;
 	font-weight: bold;
+	color: #264d73;
 }
 .about {
 	font-size: 12px;
@@ -295,6 +337,9 @@ background-size: cover;*/
 	font-size: 13px;
 	width:480px;
 	margin-left: 40px;
+	font-family: 'Andada', serif;
+	color: #4d4d4d;
+
 
 }
 
@@ -341,6 +386,8 @@ background-size: cover;*/
 	width: 400px;
 	height: 480px;	
 	background-color: #6699cc;
+	font-family: 'Andada', serif;
+	color:#4d4d4d;
 }
 
 label {
@@ -349,23 +396,34 @@ label {
 .reserve >label  {
 	text-align: left;
 	font-size: 13px;
+	font-family: 'Andada', serif;
+	color:#4d4d4d;
 }
 
 .reserve >input {
 	margin-left: -225px;
 	margin-top: 5px;
 	font-size: 13px;
+	font-family: 'Andada', serif;
 }
 .reserve > textarea {
-	margin-left: -131px;
+	margin-left: -80px;
 	margin-top: 5px;	
+}
+
+.option {
+	font-family: 'Andada', serif;	
+	color:#4d4d4d;
 }
 
 .reserve > select {
 	margin-left: -165px;
 	margin-top:5px;
+	color:#4d4d4d;
 }
 
 #button {
 	margin-top: 20px;
+	font-family: 'Andada', serif;	
+	color:#4d4d4d;
 }
